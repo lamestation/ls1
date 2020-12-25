@@ -1,5 +1,8 @@
 # LameStation LS1
 
+[![Build Status](https://github.com/lamestation/ls1/workflows/build/badge.svg)](https://github.com/lamestation/ls1/actions)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/022f1c0c-b589-4428-b1e6-41007dc1b1af/deploy-status)](https://app.netlify.com/sites/lamestation-ls1/deploys)
+
 The repository for the original LameStation hardware.
 
 ## Documentation
