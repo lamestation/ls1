@@ -1,0 +1,24 @@
+on: push
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "12"
+      - run: |
+          npm install -g prettier
+          prettier --check .
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - run: |
+          pip install -r requirements.txt
+          mkdocs build

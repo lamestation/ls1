@@ -1,0 +1,145 @@
+site_name: LS1 Documentation
+site_description: Hardware info, assembly instructions for the LS1.
+site_author: LameStation
+
+repo_name: lamestation/ls1
+repo_url: https://github.com/lamestation/ls1
+edit_uri: edit/main/docs/
+
+copyright: |
+  Unless otherwise noted, this work is licensed under <a rel="license" href="https://creativecommons.org/licenses/by/4.0?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a>
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: blue
+  logo: images/logo.png
+  favicon: images/icon.png
+  features:
+    - navigation.instant
+    - navigation.tabs
+
+extra_css:
+  - extra.css
+
+plugins:
+  - search
+  - git-revision-date
+
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/lamestation/assembly
+
+nav:
+  - The Hardware:
+      - Overview: index.md
+      - Parts: hardware/parts.md
+      - Tools: hardware/tools.md
+      - PCB: hardware/pcb.md
+      - Pinout: hardware/pinout.md
+      - Schematic: hardware/schematic.md
+  - Assembly Instructions:
+      - Overview: assembly/index.md
+      - "Section 1: Start":
+          - Overview: assembly/1-start/index.md
+          - assembly/1-start/1-lab-safety.md
+          - assembly/1-start/2-the-iron.md
+          - assembly/1-start/3-soldering.md
+          - assembly/1-start/4-cleaning-the-board.md
+          - assembly/1-start/5-cleaning-the-iron.md
+      - "Section 2: Power":
+          - Overview: assembly/2-power/index.md
+          - assembly/2-power/1-power-switch.md
+          - assembly/2-power/2-regulators.md
+          - assembly/2-power/3-capacitors.md
+          - assembly/2-power/4-multimeter-socket.md
+          - assembly/2-power/5-resistor.md
+          - assembly/2-power/6-power-led.md
+          - assembly/2-power/7-power-on-test.md
+      - "Section 3: Brain":
+          - Overview: assembly/3-brain/index.md
+          - assembly/3-brain/1-propeller-socket.md
+          - assembly/3-brain/2-crystal-oscillator.md
+          - assembly/3-brain/3-decoupling-capacitors.md
+          - assembly/3-brain/4-eeprom-circuit.md
+          - assembly/3-brain/5-software-led.md
+          - assembly/3-brain/6-system-test.md
+      - "Section 4: Serial":
+          - Overview: assembly/4-serial/index.md
+          - assembly/4-serial/1-ic-extraction.md
+          - assembly/4-serial/2-resistors-and-capacitors.md
+          - assembly/4-serial/3-transistors.md
+          - assembly/4-serial/4-programming-connectors.md
+          - assembly/4-serial/5-testing-code-download.md
+      - "Section 5: Control":
+          - Overview: assembly/5-control/index.md
+          - assembly/5-control/1-comparator-socket.md
+          - assembly/5-control/2-voltage-ladder.md
+          - assembly/5-control/3-pull-up-resistors.md
+          - assembly/5-control/4-joystick.md
+          - assembly/5-control/5-a-and-b-buttons.md
+          - assembly/5-control/6-reset-button.md
+          - assembly/5-control/7-testing-controls.md
+      - "Section 6: Audio":
+          - Overview: assembly/6-audio/index.md
+          - assembly/6-audio/1-high-pass-filter.md
+          - assembly/6-audio/2-low-pass-filter.md
+          - assembly/6-audio/3-volume-knob.md
+          - assembly/6-audio/4-amplifier-socket.md
+          - assembly/6-audio/5-decoupling-capacitors.md
+          - assembly/6-audio/6-noise-filter.md
+          - assembly/6-audio/7-audio-jack.md
+          - assembly/6-audio/8-speaker.md
+          - assembly/6-audio/9-testing-audio.md
+      - "Section 7: Display":
+          - Overview: assembly/7-display/index.md
+          - assembly/7-display/1-damping-resistors.md
+          - assembly/7-display/2-contrast-knob.md
+          - assembly/7-display/3-backlight-power.md
+          - assembly/7-display/4-decoupling-capacitor.md
+          - assembly/7-display/5-lcd-socket.md
+          - assembly/7-display/6-lcd-header.md
+          - assembly/7-display/7-testing-display.md
+      - "Section 8: Finish":
+          - Overview: assembly/8-finish/index.md
+          - assembly/8-finish/1-expansion-port.md
+          - assembly/8-finish/2-battery-holder.md
+          - assembly/8-finish/3-seating-components.md
+          - assembly/8-finish/4-mounting-the-lcd.md
+          - assembly/8-finish/5-mounting-the-cover-plate.md
+          - assembly/8-finish/6-loading-a-game.md
+      - Troubleshooting:
+          - Code Download: assembly/troubleshooting/code-download.md
+          - Power: assembly/troubleshooting/power.md
+          - Soldering: assembly/troubleshooting/soldering.md
