@@ -2,3 +2,9 @@
 .md-header-nav__button.md-logo {
   width: inherit;
 }
+
+.md-nav__title .md-nav__button.md-logo img,
+.md-nav__title .md-nav__button.md-logo svg {
+  width: 100%;
+  height: auto;
+}
