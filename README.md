@@ -7,7 +7,7 @@ The repository for the original LameStation hardware.
 
 ## Documentation
 
-View the [Hardware Manual](https://lamestation-ls1.netlify.app/).
+View the [Hardware Manual](https://ls1.docs.lamestation.org/).
 
 ## Credits
 
