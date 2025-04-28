@@ -31,5 +31,3 @@ do
             -e '/<\/div/d' \
         | pandoc -f gfm -t gfm >> "$markdown"
 done
-
-

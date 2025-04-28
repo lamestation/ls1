@@ -12,8 +12,9 @@ copyright: |
 theme:
   name: material
   palette:
-    scheme: default
-    primary: blue
+    scheme: slate
+    primary: deep purple
+    accent: deep purple
   logo: images/logo.png
   favicon: images/icon.png
   features:

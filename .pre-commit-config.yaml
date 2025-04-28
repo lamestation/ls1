@@ -1,0 +1,24 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: "v5.0.0"
+    hooks:
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+      - id: fix-byte-order-marker
+      - id: trailing-whitespace
+
+  - repo: https://gitlab.com/buildgarden/tools/badgie
+    rev: "0.12.2"
+    hooks:
+      - id: badgie
+
+  - repo: https://gitlab.com/buildgarden/pipelines/prettier
+    rev: "0.3.2"
+    hooks:
+      - id: prettier
+
+  - repo: https://gitlab.com/buildgarden/pipelines/detect-secrets
+    rev: "0.2.3"
+    hooks:
+      - id: detect-secrets
